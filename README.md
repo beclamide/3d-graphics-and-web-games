@@ -9,6 +9,21 @@ The presentation is available here: https://docs.google.com/presentation/d/1E0Rv
 
 ---
 
+### Installing
+
+After you've cloned the repo, go into each of the chapter folders and run `npm install`
+
+The examples use Grunt to build and serve. If you haven't already got it installed run `install -g grunt-cli`.
+
+You can find more information about Grunt [here](https://github.com/gruntjs/grunt-cli).
+
+---
+
+### Running
+To run the examples, `cd` into the chapter folder and run `grunt serve`
+
+---
+
 ### Licence
 
 The code is covered under the GPLv2 license, which basically means you can do what you like with it, you just have to give credit where it's due.
@@ -25,18 +40,3 @@ GNU General Public License for more details.
 
 >You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
----
-
-### Installing
-
-After you've cloned the repo, go into each of the chapter folders and run `npm install`
-
-The examples use Grunt to build and serve. If you haven't already got it installed run `install -g grunt-cli`.
-
-You can find more information about Grunt [here](https://github.com/gruntjs/grunt-cli).
-
----
-
-### Running
-To run the examples, `cd` into the chapter folder and run `grunt serve`

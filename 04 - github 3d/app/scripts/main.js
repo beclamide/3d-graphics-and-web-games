@@ -22,7 +22,8 @@ function init() {
 }
 
 function getCommits() {
-  let url = 'https://api.github.com/repos/mrdoob/three.js/commits?per_page=100&access_token=1d9f4fe8c6301ca0fe4b68128034ea6a801a786a';
+  let oAuthToken = 'put_your_access_token_here';
+  let url = `https://api.github.com/repos/mrdoob/three.js/commits?per_page=100&access_token=${oAuthToken}`;
   return fetch(url).then(response => response.json());
 }
 
