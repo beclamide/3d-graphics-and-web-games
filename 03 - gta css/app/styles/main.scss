@@ -1,0 +1,140 @@
+
+%pseudo-block {
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  box-sizing: border-box;
+  background: url(/images/tiles.jpg);
+  background-size: 3199px 3199px;
+  backface-visibility: hidden;
+  image-rendering: pixelated;
+  z-index: 10;
+  content: '';
+  //border: 1px solid black;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: #000;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.bottom {
+  @extend %pseudo-block;
+  background-color: silver;
+  background-position: -400px -2899px;
+  width: 100px;
+  height: 100px;
+
+  &.r {
+    background-color: dimgrey;
+    background-position: -1800px -2999px;
+  }
+
+  &.g {
+    background-color: yellowgreen;
+    background-position: 0 -1599px;
+  }
+
+  &.w {
+    background-color: skyblue;
+    background-position: -100px -1899px;
+  }
+}
+
+.top {
+  @extend %pseudo-block;
+  background-color: orange;
+  background-position: -1700px -2299px;
+  width: 100px;
+  height: 100px;
+}
+
+.back {
+  @extend %pseudo-block;
+  background-color: white;
+  background-position: 0 -800px;
+}
+
+.front {
+  @extend %pseudo-block;
+  background-color: darkgrey;
+  background-position: 0 -800px;
+}
+
+.left {
+  @extend %pseudo-block;
+  background-color: lightgrey;
+  background-position: -200px -800px;
+}
+
+.right {
+  @extend %pseudo-block;
+  background-color: grey;
+  background-position: -200px -800px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  color: white;
+  z-index: 99999999999;
+  & a {
+    color: lightgrey;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+pedestrian {
+  @extend %pseudo-block;
+  background: url(/images/ped.gif);
+  width: 32px;
+  height: 32px;
+  z-index: 10;
+
+  &.dead {
+    background: red;
+  }
+}
+
+car {
+  @extend %pseudo-block;
+  background: url(/images/car.png);
+  width: 70px;
+  height: 41px;
+  z-index: 10;
+}
+
+wheel {
+  @extend %pseudo-block;
+  background: black;
+  width: 5px;
+  height: 10px;
+  box-shadow: rgba(0,0,0,0.5) 0 0 5px;
+}
+collisionpoint {
+  @extend %pseudo-block;
+  background: green;
+  width: 5px;
+  height: 5px;
+}
+canvas {
+  backface-visibility: hidden;
+  z-index: 0;
+}
