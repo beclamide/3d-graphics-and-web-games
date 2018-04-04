@@ -1,39 +1,17 @@
 <!doctype html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <title>04   game structure</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
 
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<head>
+  <title>GTA CSS</title>
+  <meta name="description">A demonstration of how to use CSS3D and THREE.js to create a top-down driving game... with Zombies!</meta>
+</head>
 
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
+<body>
+  <div id="container"></div>
+  <script src="src/lib/three.min.js"></script>
+  <script src="src/lib/css3d.min.js"></script>
+  <script src="src/lib/astar.js"></script>
+  <script src="src/bundle.js"></script>
+</body>
 
-    <script src="/scripts/lib/three.min.js"></script>
-    <script src="/scripts/lib/css3d.min.js"></script>
-    <script src="/scripts/lib/astar.js"></script>
-  </head>
-  <body>
-    <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-
-    <div id="container">
-    </div>
-
-    <!-- build:js(.tmp) scripts/main.js -->
-    <script src="/scripts/bundle.js"></script>
-    <!-- endbuild -->
-
-  </body>
 </html>

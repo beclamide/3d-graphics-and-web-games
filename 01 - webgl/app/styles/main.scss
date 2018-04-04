@@ -1,31 +1,69 @@
-// bower:scss
-// endbower
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300);
+
+html,
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+h1 {
+  margin: 20px;
+  position: absolute;;
+  z-index: 10;
+}
+
+td {
+  padding: 20px;
+}
 
 body {
-  background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  & > div {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f1f1f1+50,e1e1e1+51,f6f6f6+100;White+Gloss+%231 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #f1f1f1 30%, #e1e1e1 31%, #f6f6f6 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f1f1f1 30%,#e1e1e1 31%,#f6f6f6 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffffff 0%,#f1f1f1 30%,#e1e1e1 31%,#f6f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+  }
+
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   color: #333;
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 300px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-}
+.commit {
+  transform-origin: bottom;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+47,ededed+100;White+3D+%231 */
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  max-height:350px;
+  transition: all .15s ease-in-out;
+  overflow: hidden;
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+  &.next, &.previous {
+    max-height:1px;
+    background: #ccc !important;
+  }
+
+  & .message {
+    width: 400px;
+    font-weight: 300;
+    bottom: 0;
+  }
+
+  & .date {
+    font-weight: 300;
+    font-size: 0.8rem;
+  }
+
+  & img {
+    width: 100px;
+    display: inline-block;
+  }
 }

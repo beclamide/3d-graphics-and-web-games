@@ -1,8 +1,5 @@
-// bower:scss
-// endbower
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300);
-
 
 html,
 body {
@@ -19,6 +16,7 @@ h1 {
 td {
   padding: 20px;
 }
+
 body {
 
   & > div {
@@ -33,6 +31,7 @@ body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   color: #333;
 }
+
 .commit {
   transform-origin: bottom;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+47,ededed+100;White+3D+%231 */
@@ -62,6 +61,7 @@ body {
     font-weight: 300;
     font-size: 0.8rem;
   }
+
   & img {
     width: 100px;
     display: inline-block;

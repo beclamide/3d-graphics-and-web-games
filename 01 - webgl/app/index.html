@@ -2,23 +2,14 @@
 <html lang="">
   <head>
     <meta charset="utf-8">
-    <title>01   webgl</title>
-    <meta name="description" content="">
+    <title>WebGL</title>
+    <meta name="description" content="A basic implementation of WebGL">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-
-    <script type="text/javascript" src="lib/matrix.js"></script>
+    <script type="text/javascript" src="src/lib/matrix.js"></script>
     <script id="shader-fs" type="x-shader/x-fragment">
         precision mediump float;
 
@@ -38,16 +29,12 @@
         }
     </script>
 
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="src/lib/matrix.js"></script>
+    <script type="text/javascript" src="src/bundle.js"></script>
   </head>
   <body>
-    <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
 
     <canvas id="lesson01-canvas" style="border: none;" width="500" height="500"></canvas>
-
 
   </body>
 </html>
