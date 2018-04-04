@@ -13,14 +13,10 @@ The presentation is available here: https://docs.google.com/presentation/d/1E0Rv
 
 After you've cloned the repo, go into each of the chapter folders and run `npm install`
 
-The examples use Grunt to build and serve. If you haven't already got it installed run `install -g grunt-cli`.
-
-You can find more information about Grunt [here](https://github.com/gruntjs/grunt-cli).
-
 ---
 
 ### Running
-To run the examples, `cd` into the chapter folder and run `grunt serve`
+To run the examples, `cd` into the chapter folder and run `npm run serve`
 
 ---
 
